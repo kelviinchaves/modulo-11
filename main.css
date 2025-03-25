@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    background-color: #FAFBFB;
+}
+
+header {
+    display: flex;
+    background-color: #fc9942;
+    color: #ffffff;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    padding: 1rem;
+    font-size: 2.5em;
+    font-style: normal;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.06);
+}
+
+header nav {
+    display: flex;
+}
+
+
+header button {
+    display: none;
+    border: none;
+    border-radius: 0.2rem;
+    max-height: 1.8em;
+    margin: 20px;
+    padding: 4px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #fc9942;
+    font-weight: bold;
+}
+
+header button:hover {
+    transform: rotate(360deg);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1.5em;
+}
+
+.menu {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 1em;
+    cursor: pointer;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+header nav ul li a {
+    color: #fc9942;
+}
+
+section {
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 0.7rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.sobre {
+    display: flex;
+    max-width: 1028px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.sobre aside {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imgs {
+    overflow: hidden;
+    border-radius: 0.7rem;
+}
+
+aside img {
+    max-height: 400px;
+    border-radius: 0.7rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+aside img:hover {
+    transform: scale(1.1);
+}
+
+.content {
+    display: block;
+    margin: 2em;
+}
+
+.content h2 {
+    color: #3697ff;
+    font-size: 2em;
+    border-bottom: 2px solid #cce1f7;
+    padding: 0.5em;
+}
+
+.content p {
+    padding: 0.5em;
+}
+
+
+
+section .store {
+    display: block;
+}
+
+
+.store {
+    text-align: center;
+    display: block;
+    border: none;
+    justify-content: center;
+    grid-template-columns: repeat(4, 24.25%);
+
+}
+
+.store h2 {
+    color: #3697ff;
+    font-size: 2em;
+    border-bottom: 2px solid #cce1f7;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.produtos {
+    display: flex;
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 1024px;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.produto {
+    max-width: 330px;
+    background-color: #ffffff;
+    padding: 0.6em;
+    text-align: center;
+    border-radius: 0.7rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.produto img {
+    max-height: 200px;
+    border-radius: 0.7rem;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.produto img:hover {
+    transform: scale(1.2) rotate(8deg);
+}
+
+.produto h2 {
+    margin: 1em;
+}
+
+.produto button {
+    color: #ffffff;
+    background-color: #fc9942;
+    border: none;
+    border-radius: 0.7rem;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #a55b1b;
+}
+
+.produto p {
+    margin: 1em;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .content-body {
+        display: flex;
+    }
+
+    header nav {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+
+
+    header nav ul {
+        display: flex;
+    }
+
+    .sobre {
+        max-width: 50%;
+        display: block;
+    }
+
+    aside img {
+        max-height: 400px;
+        width: 100%;
+        border-radius: 0.7rem;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-menu {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 641px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .btn-menu {
+        display: flex;
+    }
+
+    .menu-itens {
+        display: flex;
+    }
+
+    .sobre {
+        max-width: 100%;
+        max-height: 50%;
+    }
+
+    .content-body {
+        display: block;
+    }
+
+    .produtos {
+        display: block;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .produto {
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 825px) and (max-width: 1024px) {
+    .menu {
+        display: flex;
+    }
+
+    .btn-menu {
+        display: flex;
+    }
+
+    .menu-itens {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 824px) {
+
+    .btn-menu {
+        display: block;
+    }
+
+    .menu-itens {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    .menu>li {
+        /*  o sinal de > indica que será aplicável apenas para o elemento LI que é filho direto da classe  */
+        clear: both;
+    }
+
+    .menu-itens button {
+
+        margin: 15px auto;
+        margin-right: 15px;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header button {
+        display: block;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Shoes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <h1>EBAC Shoes</h1>
+        <div class="menu-itens">
+            <div class="btn-menu">
+                <button type="button">Menu</button>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        Sobre a loja
+                    </li>
+                    <li>
+                        Produtos
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content-body">
+        <section class="sobre">
+            <aside>
+                <div class="imgs">
+                    <img src="./imagens/kit_para_montar_loja_de_calcados_linha_drill_cia_expositores_153_2_747dbe6d7e543a7f2c98c9bb74a3462c.webp"
+                        alt="Loja fisica EBAC Shoes" />
+                </div>
+            </aside>
+            <div class="content">
+                <h2>Sobre a loja</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eos asperiores facilis autem
+                    ipsum,
+                    earum doloremque cumque commodi, obcaecati voluptates perferendis laboriosam ex, dolores alias quia
+                    esse
+                    quasi illum! Sit!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus eos asperiores facilis autem
+                    ipsum,
+                    earum doloremque cumque commodi, obcaecati voluptates perferendis laboriosam ex, dolores alias quia
+                    esse
+                    quasi illum! Sit!</p>
+            </div>
+        </section>
+
+
+        <section class="store">
+            <h2 class="title2">Produtos</h2>
+            <div class="produtos">
+                <div class="produto">
+                    <div class="imgs">
+                        <img src="./imagens/9cf54082-8db4-4817-b869-5ad35deeb61e-65aeae7b0b4df.webp"
+                            alt="Tênis branco" />
+                    </div>
+                    <h3>Nome do produto </h3>
+                    <p> Descrição breve do produto</p>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto">
+                    <div class="imgs">
+                        <img src="./imagens/tenis_casual_fem_adidas_grand_court_base_2_0_31149_1_83551e670ee9286221e1d6e2af13da05.webp"
+                            alt="Tênis branco" />
+                    </div>
+                    <h3>Nome do produto </h3>
+                    <p> Descrição breve do produto</p>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto">
+                    <div class="imgs">
+                        <img src="./imagens/tenis1.jpg" alt="Tênis branco" />
+                    </div>
+                    <h3>Nome do produto </h3>
+                    <p> Descrição breve do produto</p>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto">
+                    <div class="imgs">
+                        <img src="./imagens/tenis-new-balance-azul-24923.webp" alt="Tênis branco" />
+                    </div>
+                    <h3>Nome do produto </h3>
+                    <p> Descrição breve do produto</p>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.btn-menu button').click(function () {
+                $('.menu').slideToggle()
+            });
+        });
+    </script>
+</body>
+
+</html>
